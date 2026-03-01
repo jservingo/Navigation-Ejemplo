@@ -12,7 +12,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 
 @Composable
-fun PantallaDetalle(){
+fun PantallaDetalle(nombreUsuario: String){
     Column(
         modifier = Modifier
             .fillMaxSize()
@@ -21,7 +21,7 @@ fun PantallaDetalle(){
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
         Text(
-            text="Pantalla Detalle",
+            text="Pantalla Detalle $nombreUsuario",
             style = MaterialTheme.typography.titleLarge
         )
     }

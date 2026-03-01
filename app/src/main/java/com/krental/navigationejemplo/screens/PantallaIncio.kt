@@ -30,7 +30,8 @@ fun PantallaInicio(navController: NavController){
         )
         Spacer(modifier = Modifier.height(16.dp))
         Button(onClick={
-            navController.navigate("pantallaDetalle")
+            val nombre = "Marco"
+            navController.navigate("pantallaDetalle/$nombre")
         }){
             Text("Ir a detalle")
         }
